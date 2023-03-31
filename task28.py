@@ -6,3 +6,13 @@
 # 2 2
 #     4
 
+def degree_num(a, b):
+    if b == 0:
+        return a
+    return degree_num(a+1, b-1)
+
+
+numA = int(input('введите чисело А: '))
+numB = int(input('введите чисело B: '))
+
+print(degree_num(numA, numB))
